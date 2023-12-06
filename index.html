@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!-- Metadatos -->
+	<meta charset="utf-8">
+	<meta name="author" content="ManCom">
+	<meta name="description" content="Portafolio de desarrollo web de ManCom">
+	<meta name="keywords" content="HTML, CSS, JavaScript, React">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<style type="text/css">
+		a:link,
+		a:visited,
+		a:active {
+			text-decoration: none;
+		}
+	</style>
+
+	<!-- Titulo -->
+
+	<title>Horacio Manuli | Front End Developer</title>
+
+	<!-- Favicon -->
+
+	<link rel="icon" type="image/x-icon" href="images/htmlcssjs.png">
+
+	<!-- Bootstrap -->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<!-- Iconos de Bootstrap -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+	<!-- Iconos de Font-Awesome -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- CSS -->
+
+	<link href="style.css" rel="stylesheet">
+
+	<!-- Goggle Fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&family=Playfair+Display&family=Roboto:wght@100&display=swap"
+		rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Noto+Serif+Old+Uyghur&display=swap"
+		rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Quicksand:wght@300&display=swap"
+		rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Glass+Antiqua&family=Quicksand:wght@300&display=swap"
+		rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond:ital@1&family=Glass+Antiqua&family=Quicksand:wght@300&display=swap"
+		rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=DM+Serif+Display&family=EB+Garamond:ital@1&family=Glass+Antiqua&family=Quicksand:wght@300&display=swap"
+		rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Home -->
+
+	<section id="inicio">
+
+		<div class="contenido">
+
+			<header>
+
+				<div class="contenido-header">
+
+					<h1>H M</h1>
+
+					<nav id="nav" class="">
+
+						<ul id="links">
+							<a href="#inicio" class="seleccionado" onclick="seleccionar(this)">HOME</a>
+							<a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a>
+							<a href="#servicios" onclick="seleccionar(this)">SERVICES</a>
+							<a href="#skills" onclick="seleccionar(this)">SKILLS</a>
+							<a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+							<a href="#contacto" onclick="seleccionar(this)">CONTACT</a>
+						</ul>
+
+					</nav>
+
+					<!-- Íconos del menú responsive -->
+
+					<div id="icono-nav" onclick="responsiveMenu()">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+
+					<!-- Iconos de las redes sociales -->
+
+					<div class="redes">
+
+						<a href="https://www.linkedin.com/in/horaciomanuliwd/" target="_blank" rel="noopener noreferrer"><i
+								class="fa-brands fa-linkedin"></i></a>
+
+						<a href="https://www.instagram.com/horaciomanuliwd/" target="_blank" rel="noopener noreferrer"><i
+								class="bi bi-instagram"></i>
+
+							<a href="#contacto"><i class="fa-regular fa-envelope"></i></a>
+
+							<a href="#footer"><i class="fa-brands fa-whatsapp"></i></a>
+
+					</div>
+				</div>
+			</header>
+			<div class="presentacion">
+				<p class="bienvenida">Welcome to the Portfolio of</p>
+				<h2><span><span style="color: white;">H</span>oracio <span style="color: white;">M</span>anuli,</span>
+					Web
+					Developer</h2>
+				<p class="descripcion">Much more than a programmer, an artist!
+				</p>
+				<a href="#portfolio">Go to Portfolio</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Me -->
+
+	<section id="sobremi">
+
+		<div class="contenedor-foto">
+
+			<img src="images/yo2.jpg" alt="">
+		</div>
+
+		<div class="sobremi">
+
+			<p class="titulo-seccion">About me</p>
+
+			<h2>Horacio Manuli</h2>
+
+			<h3>Freelance Web Developer</h3>
+
+			<p>I'm a Web Designer/Layout Developer. I make very beautiful pages, from the visual point of view, which is my
+				task. I work freelance, and I charge for work done.</p>
+
+			<p>I consider myself a proactive person, incorporating new knowledge every day. Growing, through the studies of
+				new programming languages, which I insert into the websites that I create.</p>
+
+			<p>I love freedom, independence. For that reason, I choose to work freelance. Agree with my employer,
+				individually, on price, form of work, etc., and carry out that work remotely.</p>
+
+			<p>Obviously, I'd love to work as a team. I think that I'd learn a lot from it, in terms of web design,
+				and how to function in an organization.</p>
+
+			<p>Look at my pages and contact me, so we can talk about that project you want to do so much.</p>
+
+
+
+		</div>
+
+	</section>
+
+	<!-- Services -->
+
+	<section id="servicios">
+		<h3 class="titulo-seccion">My services</h3>
+		<div class="fila">
+			<div class="servicio">
+				<span class="icono"><img src="images/UX1.jpg" alt=""></i></span>
+				<h4>UX Design</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li></li>
+					<li></li>
+					<li>Design thinking</li>
+					<li></li>
+					<li></li>
+				</ul>
+				<p>I always make this type of designs, focused on the needs of potential clients. What the user wants and how to
+					satisfy it. For that, I create excellent wireframes.
+				</p>
+			</div>
+			<div class="servicio">
+				<span class="icono"><img src="images/UI1.jpg" alt=""></span>
+				<h4>UI Design</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li></li>
+					<li></li>
+					<li>"Look and Feel”</li>
+					<li></li>
+					<li></li>
+				</ul>
+				<p>I bring the UX structure to life, with UI Design, using color palettes, grids, columns, making Responsive
+					pages, etc. And being a link between the layout and the Front End Developer.</p>
+			</div>
+			<div class="servicio">
+				<span class="icono"><img src="images/react5.png" alt=""></span>
+				<h4>Front End Web Development</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li></li>
+					<li></li>
+					<li>ReactJS</li>
+					<li></li>
+					<li></li>
+				</ul>
+				<p>I use this library to create graphical interfaces, making progress bars, texts, animations, images, etc.,
+					with this technology.</p>
+			</div>
+		</div>
+		<div class="fila">
+			<div class="servicio">
+				<span class="icono"><img src="images/creativity1.jpg" alt=""></span>
+				<h4>Proactivity</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li></li>
+					<li></li>
+					<li>Open mind and receptivity</li>
+					<li></li>
+					<li></li>
+				</ul>
+				<p>Creativity, efficiency, great desire to work as a team, to continue incorporating knowledge permanently</p>
+			</div>
+			<div class="servicio">
+				<span class="icono"><img src="images/idiomas1.jpg" alt=""></span>
+				<h4>English and Spanish</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li></li>
+					<li></li>
+					<li>Websites in both languages</li>
+					<li></li>
+					<li></li>
+				</ul>
+				<p>In a completely globalized world, it's essential to be able to create websites in English, the international
+					language, for greater global reach. I do it.</p>
+			</div>
+			<div class="servicio">
+				<span class="icono"><img src="images/easy1.jpg" alt=""></span>
+				<h4>Clear and short code</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li></li>
+					<li></li>
+					<li>Making teamwork easier</li>
+					<li></li>
+					<li></li>
+				</ul>
+				<p>So, that the developers with whom that I'm going to work, can easily understand it, and can modify it
+					quickly,
+					speeding up their task, and saving them a lot of time.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills -->
+
+	<div class="contenedor-skills" id="skills">
+		<h3> My skills</h3>
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">UX-UI Design</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="uxui" class=""></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">Responsive Design</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="rd" class=""></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">Web Development</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="wd" class=""></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">ReactJS</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="rjs" class=""></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">Proactivity</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="pro" class=""></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">Creativity</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="cre" class=""></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">Discipline</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="di" class=""></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">Receptivity</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="re" class=""></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">Flexibility</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="fl" class=""></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">Aesthetic Sensitivity</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="as" class=""></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span><span style="color: white;">Permanent learning</span></p>
+				<span class="porcentaje"><span style="color: white;">100%</span></span>
+			</div>
+			<div class="barra">
+				<div id="pl" class=""></div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<!-- Portfolio -->
+
+	<section id="portfolio">
+		<h3 class="titulo-seccion">My portfolio</h3>
+		<div class="fila">
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="images/mccoffee1.png" alt="">
+				<div class="info">
+					<a href="https://mancomcoffee.mancomwd.com/" target="_blank" rel="noopener noreferrer">
+						<h4><span style="color: #ff8c1a;font-size: 17px;">Go to</span></h4>
+					</a>
+					<p><span style="color: #ff8c1a;font-size: 13px;">MC Coffee</span></p>
+				</div>
+			</div>
+
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<img src="images/proyecto2.png" alt="">
+				<div class="info">
+					<a href="https://mancomart.mancomwd.com/" target="_blank" rel="noopener noreferrer">
+						<h4><span style="color: #0096d2;font-size: 17px;">Go to</span></h4>
+					</a>
+					<p><span style="color: #0096d2;font-size: 13px;">MC Art</span></p>
+				</div>
+			</div>
+
+			<div class="proyecto">
+
+				<div class="overlay"></div>
+
+				<img src="images/proyecto1.png" alt="">
+
+				<div class="info">
+
+					<h4><span style="color: #ccc;font-size: 17px;">Alternative Portfolio</span></h4>
+					</a>
+					<p><span style="color: #ccc;font-size: 13px;">Coming soon</span></p>
+				</div>
+			</div>
+
+
+
+
+
+
+
+		</div>
+
+
+	</section>
+
+	<!-- Contacto -->
+
+	<div id="contacto">
+
+		<div class="form-content">
+
+			<h2>Contact Me</h2>
+
+			<form action="https://formsubmit.co/info@mancomwd.com" method="POST">
+
+				<label for="name">Full Name</label>
+				<input type="text" name="name" id="name">
+
+				<label for="email">Mail</label>
+				<input type="email" name="email" id="email">
+
+				<label for="subject">About</label>
+				<input type="text" name="subject" id="subject">
+
+				<label for="comments">Message</label>
+				<textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+
+				<input class="btn" type="submit" value="Send">
+
+				<input type="hidden" name="_next" value="https://www.mancomwd.com/#inicio">
+
+				<input type="hidden" name="_captcha" value="false">
+
+
+			</form>
+
+
+		</div>
+
+	</div>
+
+
+	<!-- Footer -->
+
+	<section id="footer">
+
+		<p>Created by Horacio Manuli</p>
+
+		<p>All Rights Reserved - (2023) &#169;</p>
+
+		<div class="redes">
+
+			<a href="https://www.linkedin.com/in/horaciomanuliwd/" target="_blank" rel="noopener noreferrer"><i
+					class="fa-brands fa-linkedin"></i></a>
+
+			<a href="https://www.instagram.com/horaciomanuliwd/" target="_blank" rel="noopener noreferrer"><i
+					class="bi bi-instagram"></i></a>
+
+			<a href="#contacto"><i class="fa-regular fa-envelope"></i></a>
+
+			<p><a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><i
+						class="fa-brands fa-whatsapp"></i> +54 9 11 38001067</a></p>
+		</div>
+	</section>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
